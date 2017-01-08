@@ -56,6 +56,11 @@ build:
   publish_nuget: false
   verbosity: minimal
 
+after_build:
+  - .\tools\docfx\docfx metadata doc\docfx.json
+  - .\tools\docfx\docfx build doc\docfx.json
+  
+  
 #after_build:
 # Build nuget package
  # - cmd: nuget pack src\IpfsCore.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
