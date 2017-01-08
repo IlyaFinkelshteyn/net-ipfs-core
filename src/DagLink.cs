@@ -42,7 +42,7 @@ namespace Ipfs
 
         /// <summary>
         ///   Creates a new instance of the <see cref="DagLink"/> class from the
-        ///   specified <see cref="CodedInputStream"/>.
+        ///   specified <see cref="Google.Protobuf.CodedInputStream"/>.
         /// </summary>
         /// <param name="stream">(
         ///   A <see cref="CodedInputStream"/> containing the binary representation of the
